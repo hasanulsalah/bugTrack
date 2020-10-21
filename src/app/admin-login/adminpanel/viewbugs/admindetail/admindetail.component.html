@@ -1,0 +1,108 @@
+<div class="my-class">
+  Your Bug Detail
+</div>
+<table class="table" id="viewstyle">
+  <tr>
+    <th>Bug ID:</th>
+    <td><input type="text" name="bugid" style="border: none;" /></td>
+    <th>Author:</th>
+    <td><input type="text" name="authname" style="border: none;" /></td>
+  </tr>
+  <tr>
+    <th>Product Name:</th>
+    <td colspan="2">
+      <input type="text" name="prodname" style="border: none;" />
+    </td>
+  </tr>
+  <tr>
+    <th>Environment:</th>
+    <td><input type="text" name="env" style="border: none;" /></td>
+    <th>Type:</th>
+    <td><input type="text" name="type" style="border: none;" /></td>
+  </tr>
+  <tr>
+    <th>Description:</th>
+    <td colspan="2"><input type="text" name="desc" style="border: none;" /></td>
+  </tr>
+  <tr>
+    <td></td>
+    <th style="background-color: #e63e4c;">Current Stage</th>
+    <th style="background-color: #e63e4c;">New Stage</th>
+  </tr>
+  <tr>
+    <th>Priority:</th>
+    <td>
+      -
+    </td>
+    <td>
+      <select>
+        <option value="high">High</option>
+        <option value="moderate">Moderate</option>
+        <option value="low">Low</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <th>Status:</th>
+    <td>
+      New
+    </td>
+    <td>
+      <select>
+        <option value="assigned">Assigned</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <th>Responsible:</th>
+    <td>
+      -
+    </td>
+    <td>
+      <select>
+        <option value="aravind">Aravind</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+    </td>
+  </tr>
+</table>
+
+<div class="wrapper">
+<input
+      class="btn btn-primary m-3"
+      type="submit"
+      value="update"
+      (click) = "Topage()"
+    />
+</div>
+
+<div class="my-class">
+  Audit Trial
+</div>
+
+<table class="table" id="viewstyle">
+  <tr>
+    <th>Expert:</th>
+    <td><input type="text" name="expertname" style="border: none;" /></td>
+  </tr>
+  <tr>
+    <th>Comment:</th>
+    <td><input type="text" name="expertcomment" style="border: none;" /></td>
+  </tr>
+  <tbody>
+    <!-- <tr *ngFor="let bug of bugs">
+            <td>{{ bug.bugId }}</td>
+            <td>{{ bug.bugName }}</td>
+            <td>{{ bug.bugType }}</td>
+            <td>{{ bug.reporter }}</td>
+          </tr> -->
+  </tbody>
+</table>
+<div class="my-class">
+  <a routerLink="/viewbugs">back</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+</div>

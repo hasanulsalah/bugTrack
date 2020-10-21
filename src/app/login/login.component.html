@@ -1,0 +1,53 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Login</h5>
+    <h6 class="card-subtitle mb-2 text-muted">
+      Please use your credentials to login.
+    </h6>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Login Id </span>
+      </div>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Username"
+        aria-label="Username"
+        aria-describedby="basic-addon1"
+      />
+    </div>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Password</span>
+      </div>
+      <input
+        type="password"
+        class="form-control"
+        placeholder="Password"
+        aria-label="Password"
+        aria-describedby="basic-addon1"
+      />
+    </div>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Type</span>
+      </div>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Type"
+        aria-label="Type"
+        aria-describedby="basic-addon1"
+        [value]="userPrivileges[privilege]"
+        disabled="true"
+      />
+    </div>
+    <input
+      class="btn btn-primary m-3"
+      type="submit"
+      value="Submit"
+      (click)="submitted.emit()"
+    />
+    <input class="btn btn-primary" type="reset" value="Reset" />
+  </div>
+</div>

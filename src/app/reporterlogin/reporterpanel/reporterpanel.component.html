@@ -1,0 +1,55 @@
+<div class="row">
+  <div class="col-3">
+    <div
+      class="nav flex-column nav-pills"
+      id="v-pills-tab"
+      role="tablist"
+      aria-orientation="vertical"
+    >
+      <a
+        class="nav-link"
+        id="v-pills-reportbug-tab"
+        data-toggle="pill"
+        href="#v-pills-reportbug"
+        role="tab"
+        aria-controls="v-pills-reportbug"
+        aria-selected="false"
+        >Report A New Bug</a
+      >
+      <a
+        class="nav-link"
+        id="v-pills-viewbugstatus-tab"
+        data-toggle="pill"
+        href="#v-pills-viewbugstatus"
+        role="tab"
+        aria-controls="v-pills-viewbugstatus"
+        aria-selected="false"
+        >View Bug Status</a
+      >
+    </div>
+  </div>
+  <div class="col-9">
+    <div class="tab-content" id="v-pills-tabContent">
+      <div
+        class="tab-pane fade"
+        id="v-pills-reportbug"
+        role="tabpanel"
+        aria-labelledby="v-pills-reportbug-tab"
+      >
+        
+      <app-reportbug></app-reportbug>
+
+      </div>
+      <div
+        class="tab-pane fade"
+        id="v-pills-viewbugstatus"
+        role="tabpanel"
+        aria-labelledby="v-pills-viewbugstatus-tab"
+      >
+        
+      <app-viewbugstatus></app-viewbugstatus>
+
+      </div>
+    </div>
+  </div>
+</div>
